@@ -7,24 +7,42 @@ while (num < 11) {
     num++;
 }
 
-let num20 = 20;
+// let num20 = 20;
 
-first: for (let i = 20; i > 9; i--) {
-    if (num20 === 13) {
-        break first;
+// first: for (let i = 20; i > 9; i--) {
+//     if (num20 === 13) {
+//         break first;
+//     }
+//     console.log(num20);
+//     num20--;
+// }
+
+
+for (let i = 20; i > 9; i--) {
+    if (i === 13) {
+        break ;
     }
-    console.log(num20);
-    num20--;
+    console.log(i);
 }
 
-let num10 = 0;
+
+
+// let num10 = 0;
+
+// for (let i = 0; i < 11; i++) {
+//     if (num10%2 === 0 && num10 !== 0) {
+//         console.log(num10);
+//     }
+//     num10++;
+// }
 
 for (let i = 0; i < 11; i++) {
-    if (num10%2 === 0 && num10 !== 0) {
-        console.log(num10);
+    if (i%2 === 0 && i !== 0) {
+        console.log(i);
     }
-    num10++;
 }
+
+
 
 for (let i = 2; i <= 16; i++) {
     if (i % 2 === 0) {
@@ -44,10 +62,9 @@ while (num16 <= 16) {
 }
 
 const arrayOfNumbers = [];
-for (let i = 5; i < 11; i++) {
-    for (let j = 0; i < 6; j++) {
-        arrayOfNumbers[j] = i;
-    }
+
+for (let i = 0; i < 6; i++) {
+    arrayOfNumbers[i] = +i + 5;
 }
 console.log(arrayOfNumbers);
 
