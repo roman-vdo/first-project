@@ -40,7 +40,7 @@ const personalMovieDB = {
 
 function rememerMyFilms() {
     for (let i = 0; i < 2; i++) {
-        const a = prompt("Один из последних просмотренных фильмов?", ""),
+        const a = prompt("Один из последних просмотренных фильмов?", "").trim(),
               b = prompt("На сколько оцените его?", "");
     
         if (a != null && a != "" && b != null && b != "" && a.length < 50) {
